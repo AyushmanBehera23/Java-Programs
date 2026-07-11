@@ -57,3 +57,4 @@ public class NearestSmallerElement{
         sc.close();
     }
 }
+// ayushman
