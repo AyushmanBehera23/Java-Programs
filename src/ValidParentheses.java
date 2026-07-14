@@ -40,4 +40,3 @@ public class ValidParentheses {
         sc.close();
     }
 }
-//ayush
