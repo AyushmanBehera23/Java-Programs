@@ -20,6 +20,16 @@ public class BST {
         }
         return root;
     }
+    void display(Node root) {
+
+        if (root == null) {
+            return;
+        }
+
+        display(root.left);
+        System.out.print(root.data + " ");
+        display(root.right);
+    }
     public static void main(String[] args) {
         BST tree = new BST();
         tree.root = tree.insert(tree.root, 50);
@@ -27,5 +37,6 @@ public class BST {
         tree.root = tree.insert(tree.root, 70);
         tree.root = tree.insert(tree.root, 20);
         tree.root = tree.insert(tree.root, 40);
+        tree.display(tree.root);
     }
 }

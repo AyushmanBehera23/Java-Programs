@@ -1,8 +1,5 @@
 import java.util.*;
 public class StockSpan {
-
-    public class StockSpan {
-
         static ArrayList<Integer> calculateSpan(int[] arr) {
 
             Stack<int[]> st = new Stack<>();
@@ -47,5 +44,3 @@ public class StockSpan {
             sc.close();
         }
     }
-
-}
