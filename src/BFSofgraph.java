@@ -10,10 +10,10 @@ class BFSofgraph {
         while (!q.isEmpty()) {
             int node = q.poll();
             ans.add(node);
-            for (int neighbor : adj.get(node)) {
-                if (!visit[neighbor]) {
-                    visit[neighbor] = true;
-                    q.add(neighbor);
+            for (int a : adj.get(node)) {
+                if (!visit[a]) {
+                    visit[a] = true;
+                    q.add(a);
                 }
             }
         }
